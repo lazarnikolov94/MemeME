@@ -131,11 +131,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         memedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-//        UIGraphicsBeginImageContext(self.view.frame.size)
-//        self.view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
-//        memedImage = UIGraphicsGetImageFromCurrentImageContext()
-//        UIGraphicsEndImageContext()
-        
         topBar.hidden = false
         bottomBar.hidden = false
         
@@ -143,6 +138,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     @IBAction func shareMeme(sender: AnyObject) {
         let memedImage = generateMemedImage()
+        UIImageWriteToSavedPhotosAlbum(memedImage, nil, nil, nil)
         
         let shareItems = [memedImage]
         let activityViewController = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
