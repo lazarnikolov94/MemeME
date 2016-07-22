@@ -23,6 +23,9 @@
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="JTM-gK-Cvn" userLabel="Top Toolbar">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="saE-u8-XJa"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem systemItem="action" id="2hm-1i-RYI" userLabel="Share">
                                         <color key="tintColor" red="1" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,6 +44,9 @@
                             </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="43P-lj-ole" userLabel="Bottom Toolbar">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="q5j-ot-hRE"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="aTl-23-a9O"/>
                                     <barButtonItem title="Album" id="yZG-rY-lFZ">
@@ -75,7 +81,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="P82-YN-wrS" firstAttribute="leading" secondItem="n19-wI-uci" secondAttribute="leading" constant="20" id="1t8-7o-HBO"/>
-                            <constraint firstItem="n19-wI-uci" firstAttribute="top" secondItem="JTM-gK-Cvn" secondAttribute="bottom" id="33j-4p-0GY"/>
+                            <constraint firstItem="n19-wI-uci" firstAttribute="top" secondItem="JTM-gK-Cvn" secondAttribute="bottom" id="3Em-cE-VyF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="43P-lj-ole" secondAttribute="trailing" constant="-20" id="8aw-Zt-1Sw"/>
                             <constraint firstItem="JTM-gK-Cvn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9F0-pe-WVR"/>
                             <constraint firstItem="38o-ks-ut4" firstAttribute="leading" secondItem="n19-wI-uci" secondAttribute="leading" constant="20" id="Cr4-D7-fvq"/>
@@ -85,11 +91,11 @@
                             <constraint firstItem="JTM-gK-Cvn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="PKR-Iy-dyc"/>
                             <constraint firstItem="43P-lj-ole" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Soj-QL-lke"/>
                             <constraint firstItem="n19-wI-uci" firstAttribute="bottom" secondItem="43P-lj-ole" secondAttribute="top" id="TdG-s0-rlc"/>
-                            <constraint firstItem="P82-YN-wrS" firstAttribute="top" secondItem="n19-wI-uci" secondAttribute="top" constant="20" id="Yjn-I2-OCp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="43P-lj-ole" secondAttribute="bottom" id="dMB-JM-MM2"/>
                             <constraint firstItem="P82-YN-wrS" firstAttribute="trailing" secondItem="n19-wI-uci" secondAttribute="trailing" constant="-20" id="nXO-su-pEA"/>
                             <constraint firstItem="38o-ks-ut4" firstAttribute="trailing" secondItem="n19-wI-uci" secondAttribute="trailing" constant="-20" id="pEx-bx-4RZ"/>
                             <constraint firstItem="n19-wI-uci" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="t97-wq-MrV"/>
+                            <constraint firstItem="P82-YN-wrS" firstAttribute="top" secondItem="n19-wI-uci" secondAttribute="top" constant="20" id="wXe-cA-D55"/>
                         </constraints>
                     </view>
                     <connections>
