@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,25 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="nLQ-Qz-Xq1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angry" translatesAutoresizingMaskIntoConstraints="NO" id="WtW-U9-xk4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WtW-U9-xk4" firstAttribute="top" secondItem="nLQ-Qz-Xq1" secondAttribute="top" id="0Jh-M3-i6u"/>
+                            <constraint firstItem="WtW-U9-xk4" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="3TD-we-HGz"/>
+                            <constraint firstItem="WtW-U9-xk4" firstAttribute="trailing" secondItem="nLQ-Qz-Xq1" secondAttribute="trailing" id="9MJ-RI-7Pm"/>
+                            <constraint firstItem="nLQ-Qz-Xq1" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="DXb-Pr-396"/>
+                            <constraint firstItem="nLQ-Qz-Xq1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="GJo-Tn-kaU"/>
+                            <constraint firstAttribute="trailing" secondItem="nLQ-Qz-Xq1" secondAttribute="trailing" id="Oqb-K7-73s"/>
+                            <constraint firstItem="nLQ-Qz-Xq1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="dVc-MA-CZb"/>
+                            <constraint firstItem="WtW-U9-xk4" firstAttribute="leading" secondItem="nLQ-Qz-Xq1" secondAttribute="leading" id="udN-bt-ubb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +42,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="angry" width="300" height="325"/>
+        <image name="splash" width="414" height="736"/>
+    </resources>
 </document>
