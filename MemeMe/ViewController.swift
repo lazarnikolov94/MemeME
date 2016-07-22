@@ -151,5 +151,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             activityViewController.dismissViewControllerAnimated(true, completion: nil)
         }
     }
+    
+    @IBAction func cancelMeme() {
+        imageView.image = nil
+        memeTopTextField.text = "TOP"
+        memeBottomTextField.text = "BOTTOM"
+    }
 }
 

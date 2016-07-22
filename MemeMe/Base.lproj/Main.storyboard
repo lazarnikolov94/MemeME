@@ -30,7 +30,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="U53-wh-vzV"/>
-                                    <barButtonItem title="Cancel" id="fW8-8X-Y39"/>
+                                    <barButtonItem title="Cancel" id="fW8-8X-Y39">
+                                        <connections>
+                                            <action selector="cancelMeme" destination="BYZ-38-t0r" id="1Kk-28-G0M"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="43P-lj-ole" userLabel="Bottom Toolbar">
