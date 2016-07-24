@@ -413,7 +413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lazarnikolov.MemeMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "039bf584-42ca-4ff3-af23-fff652f044e1";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -428,7 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lazarnikolov.MemeMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "039bf584-42ca-4ff3-af23-fff652f044e1";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

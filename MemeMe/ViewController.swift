@@ -138,7 +138,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     @IBAction func shareMeme(sender: AnyObject) {
         let memedImage = generateMemedImage()
-        UIImageWriteToSavedPhotosAlbum(memedImage, nil, nil, nil)
         
         let shareItems = [memedImage]
         let activityViewController = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
