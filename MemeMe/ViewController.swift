@@ -141,6 +141,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         let shareItems = [memedImage]
         let activityViewController = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
         activityViewController.excludedActivityTypes = [UIActivityTypePrint, UIActivityTypePostToWeibo, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList, UIActivityTypePostToVimeo]
         
         self.presentViewController(activityViewController, animated: true, completion: nil)
